@@ -67,9 +67,7 @@
                 "dimensions": 400,
                 "distanceFunction": "euclidean",
                 "embeddingSource": {
-                  "sourcePaths": [
-                    "/description"
-                  ],
+                  "sourcePaths": ["/description"],
                   "endpoint": "https://myaccount.services.ai.azure.com",
                   "deploymentName": "text-embedding-3-small",
                   "modelName": "text-embedding-3-small",
@@ -108,18 +106,14 @@
             ]
           },
           "partitionKey": {
-            "paths": [
-              "/AccountNumber"
-            ],
+            "paths": ["/AccountNumber"],
             "kind": "Hash"
           },
           "defaultTtl": 100,
           "uniqueKeyPolicy": {
             "uniqueKeys": [
               {
-                "paths": [
-                  "/testPath"
-                ]
+                "paths": ["/testPath"]
               }
             ]
           },
@@ -209,9 +203,7 @@
                   "path": "/vectorPath2",
                   "type": "quantizedFlat",
                   "quantizationByteSize": 100,
-                  "vectorIndexShardKey": [
-                    "/vectorShardKey1"
-                  ]
+                  "vectorIndexShardKey": ["/vectorShardKey1"]
                 },
                 {
                   "path": "/vectorPath3",
@@ -244,9 +236,7 @@
                   "dimensions": 400,
                   "distanceFunction": "euclidean",
                   "embeddingSource": {
-                    "sourcePaths": [
-                      "/description"
-                    ],
+                    "sourcePaths": ["/description"],
                     "endpoint": "https://myaccount.services.ai.azure.com",
                     "deploymentName": "text-embedding-3-small",
                     "modelName": "text-embedding-3-small",
@@ -285,18 +275,14 @@
               ]
             },
             "partitionKey": {
-              "paths": [
-                "/AccountNumber"
-              ],
+              "paths": ["/AccountNumber"],
               "kind": "Hash"
             },
             "defaultTtl": 100,
             "uniqueKeyPolicy": {
               "uniqueKeys": [
                 {
-                  "paths": [
-                    "/testPath"
-                  ]
+                  "paths": ["/testPath"]
                 }
               ]
             },
