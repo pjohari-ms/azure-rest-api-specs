@@ -2624,7 +2624,7 @@ model DatabaseAccountUpdateProperties {
    * Flag to indicate whether to enable Integrated Embeddings on the Cosmos DB account. This property is supported only for existing API for NoSQL accounts with continuous backup and all versions and deletes change feed enabled. This property cannot be set during account creation. Set to true to enable Integrated Embeddings. Setting true again after enablement is an idempotent no-op. Integrated Embeddings cannot be disabled after it is enabled; explicitly setting false after enablement returns 400 Bad Request. Omitting this property during an update preserves its current value.
    */
   @added(Versions.v2026_09_01_preview)
-  @visibility(Lifecycle.Read, Lifecycle.Update)
+  @visibility(Lifecycle.Create, Lifecycle.Read)
   enableEmbeddingGenerator?: boolean;
 
   /**
@@ -2884,7 +2884,7 @@ model DatabaseAccountCreateUpdateProperties {
    * Flag to indicate whether to enable Integrated Embeddings on the Cosmos DB account. This property is supported only for existing API for NoSQL accounts with continuous backup and all versions and deletes change feed enabled. This property cannot be set during account creation. Set to true to enable Integrated Embeddings. Setting true again after enablement is an idempotent no-op. Integrated Embeddings cannot be disabled after it is enabled; explicitly setting false after enablement returns 400 Bad Request. Omitting this property during an update preserves its current value.
    */
   @added(Versions.v2026_09_01_preview)
-  @visibility(Lifecycle.Read, Lifecycle.Update)
+  @visibility(Lifecycle.Create, Lifecycle.Read)
   enableEmbeddingGenerator?: boolean;
 
   /**
